@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1a1a1a;
+    color: #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.title .orange {
+    color: orange;
+}
+
+.time {
+    font-size: 18px;
+    margin-bottom: 20px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 18px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.social-buttons {
+    z-index: 1;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.social-buttons a,
+.social-buttons button {
+    color: #ccc;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.audio-control {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.start-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    cursor: pointer;
+    background-color: #1a1a1a;
+}
+
+.start-text {
+    font-size: 18px;
+    color: #ccc;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.start-text:hover {
+    transform: scale(1.1);
+}
+
+.ltc-address,
+.about-me {
+    display: none;
+    font-size: 16px;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.back-button {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.about-me-button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 18px;
+    color: #ccc;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
