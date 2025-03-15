@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>thedoppler.cc</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="title">
+        thedoppler.<span class="orange">cc</span>
+    </div>
+    <div class="time" id="current-time">
+        == Current Time for Me: 12:00:00 AM ==
+    </div>
+    <div class="social-buttons">
+        <a href="https://youtube.com/@thedoppler-l5z?si=qPgcsOir2PoUiaOw" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://github.com/ceezqt" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://cash.app/$BigBallerBrazil" target="_blank"><i class="fas fa-dollar-sign"></i></a>
+        <a href="https://paypal.me/thedoppler" target="_blank"><i class="fab fa-paypal"></i></a>
+        <a href="https://www.instagram.com/thedopplerr_/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <button onclick="toggleLTCAddress()">
+            <i class="fas fa-coins"></i> LTC
+        </button>
+    </div>
+    <div class="ltc-address">
+        ltc1qj2uklqr3nrjelykhhjnpmkqet8fvcx429w6m0t
+    </div>
+    <div class="about-me">
+        Hi, my name is Ceez! I do reverse engineering with Lua, Python, and JavaScript. I started experiencing coding when I was 15 and worked hard to grow my skills and improve over time. If you want to contact me, use Discord: @charlesplatt
+    </div>
+    <div class="back-button" onclick="goBack()">
+        &lt;-- Back
+    </div>
+    <canvas class="background" id="network-canvas"></canvas>
+    <div class="footer">Made by Ceez</div>
+    <div class="audio-control">
+        <iframe id="audio-iframe" width="0" height="0" src="" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+    </div>
+    <div class="start-overlay" onclick="startApp()">
+        <div class="start-text">Press to begin...</div>
+    </div>
+    <button class="about-me-button" onclick="showAboutMe()">About Me</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
